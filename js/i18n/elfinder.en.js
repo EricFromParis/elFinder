@@ -8,106 +8,114 @@
 if (typeof elFinder === 'function' && elFinder.prototype.i18) {
 	elFinder.prototype.i18.en = {
 		translator : 'Troex Nevelin &lt;troex@fury.scancode.ru&gt;, Naoki Sawada &lt;hypweb+elfinder@gmail.com&gt;',
-		language   : 'English',
+		language   : 'Francais',
 		direction  : 'ltr',
-		dateFormat : 'M d, Y h:i A', // Mar 13, 2012 05:27 PM
-		fancyDateFormat : '$1 h:i A', // will produce smth like: Today 12:25 PM,
+		dateFormat : 'd M Y HH:mm', // Mar 13, 2012 05:27 PM
+		fancyDateFormat : '$1 h:i A', // will produce smth like: Today 12:25 PM
 		nonameDateFormat : 'ymd-His', // to apply if upload file is noname: 120513172700
 		messages   : {
 
-			/********************************** errors **********************************/
-			'error'                : 'Error',
-			'errUnknown'           : 'Unknown error.',
-			'errUnknownCmd'        : 'Unknown command.',
-			'errJqui'              : 'Invalid jQuery UI configuration. Selectable, draggable and droppable components must be included.',
-			'errNode'              : 'elFinder requires DOM Element to be created.',
-			'errURL'               : 'Invalid elFinder configuration! URL option is not set.',
-			'errAccess'            : 'Access denied.',
-			'errConnect'           : 'Unable to connect to backend.',
-			'errAbort'             : 'Connection aborted.',
-			'errTimeout'           : 'Connection timeout.',
-			'errNotFound'          : 'Backend not found.',
-			'errResponse'          : 'Invalid backend response.',
-			'errConf'              : 'Invalid backend configuration.',
-			'errJSON'              : 'PHP JSON module not installed.',
-			'errNoVolumes'         : 'Readable volumes not available.',
-			'errCmdParams'         : 'Invalid parameters for command "$1".',
-			'errDataNotJSON'       : 'Data is not JSON.',
-			'errDataEmpty'         : 'Data is empty.',
-			'errCmdReq'            : 'Backend request requires command name.',
-			'errOpen'              : 'Unable to open "$1".',
-			'errNotFolder'         : 'Object is not a folder.',
-			'errNotFile'           : 'Object is not a file.',
-			'errRead'              : 'Unable to read "$1".',
-			'errWrite'             : 'Unable to write into "$1".',
-			'errPerm'              : 'Permission denied.',
-			'errLocked'            : '"$1" is locked and can not be renamed, moved or removed.',
-			'errExists'            : 'Item named "$1" already exists.',
-			'errInvName'           : 'Invalid file name.',
-			'errInvDirname'        : 'Invalid folder name.',  // from v2.1.24 added 12.4.2017
-			'errFolderNotFound'    : 'Folder not found.',
-			'errFileNotFound'      : 'File not found.',
-			'errTrgFolderNotFound' : 'Target folder "$1" not found.',
-			'errPopup'             : 'Browser prevented opening popup window. To open file enable it in browser options.',
-			'errMkdir'             : 'Unable to create folder "$1".',
-			'errMkfile'            : 'Unable to create file "$1".',
-			'errRename'            : 'Unable to rename "$1".',
-			'errCopyFrom'          : 'Copying files from volume "$1" not allowed.',
-			'errCopyTo'            : 'Copying files to volume "$1" not allowed.',
-			'errMkOutLink'         : 'Unable to create a link to outside the volume root.', // from v2.1 added 03.10.2015
-			'errUpload'            : 'Upload error.',  // old name - errUploadCommon
-			'errUploadFile'        : 'Unable to upload "$1".', // old name - errUpload
-			'errUploadNoFiles'     : 'No files found for upload.',
-			'errUploadTotalSize'   : 'Data exceeds the maximum allowed size.', // old name - errMaxSize
-			'errUploadFileSize'    : 'File exceeds maximum allowed size.', //  old name - errFileMaxSize
-			'errUploadMime'        : 'File type not allowed.',
-			'errUploadTransfer'    : '"$1" transfer error.',
-			'errUploadTemp'        : 'Unable to make temporary file for upload.', // from v2.1 added 26.09.2015
-			'errNotReplace'        : 'Object "$1" already exists at this location and can not be replaced by object with another type.', // new
-			'errReplace'           : 'Unable to replace "$1".',
-			'errSave'              : 'Unable to save "$1".',
-			'errCopy'              : 'Unable to copy "$1".',
-			'errMove'              : 'Unable to move "$1".',
-			'errCopyInItself'      : 'Unable to copy "$1" into itself.',
-			'errRm'                : 'Unable to remove "$1".',
-			'errTrash'             : 'Unable into trash.', // from v2.1.24 added 30.4.2017
-			'errRmSrc'             : 'Unable remove source file(s).',
-			'errExtract'           : 'Unable to extract files from "$1".',
-			'errArchive'           : 'Unable to create archive.',
-			'errArcType'           : 'Unsupported archive type.',
+			/********************************** erreurs **********************************/
+			'erreur'                : 'Erreur',
+			'errUnknown'           : 'Erreur inconnue.',
+			'errUnknownCmd'        : 'Commande inconnue.',
+			'errJqui'              : 'Configuration jQuery UI non valide. Des composants qui peuvent être selectionnés et bougés doivent être inclus.',
+			'errNode'              : 'elFinder necessite des éléments DOM d\'être créés.',
+			'errURL'               : 'Configuration elFinder non valide. L\'option URL n\'est pas definie.',
+			'errAccess'            : 'Acces refusé.',
+			'errConnect'           : 'Impossible de connecter backend.',
+			'errAbort'             : 'Connection avortée.',
+			'errTimeout'           : 'Connection expirée.',
+			'errNotFound'          : 'Backend non trouvé.',
+			'errResponse'          : 'Réponse backend non valide.',
+			'errConf'              : 'Configuration backend non valide.',
+			'errJSON'              : 'Module PHP JSON non installé.',
+			'errNoVolumes'         : 'Volumes lisibles non disponible.',
+			'errCmdParams'         : 'Parametres non valide pour la commande "$1".',
+			'errDataNotJSON'       : 'Les données ne sont pas JSON.',
+			'errDataEmpty'         : 'Les données sont vides.',
+			'errCmdReq'            : 'La requete Backend requiere un nom de commande.',
+			'errOpen'              : 'Incapable d\'ouvrir "$1".',
+			'errNotFolder'         : 'L\'objet n\'est pas un dossier.',
+			'errNotFile'           : 'L\'objet n\'est pas un fichier.',
+			'errRead'              : 'Incpable de lire "$1".',
+			'errWrite'             : 'Incapable d\'écrire dans "$1".',
+			'errPerm'              : 'Permission refusée.',
+			'errLocked'            : '"$1" est blocké et ne peut pas être renommé, déplacé ni retiré.',
+			'errExists'            : 'l\'objet nommé "$1" existe déjà.',
+			'errInvName'           : 'Nom de fichier non valide.',
+			'errInvDirname'        : 'Nom de dossier non valide.',
+ // from v2.1.24 added 12.4.2017
+			'errFolderNotFound'    : 'Dossier non trouvé.',
+			'errFileNotFound'      : 'Fichier non trouvé.',
+			'errTrgFolderNotFound' : 'Dossier visé "$1" non trouvé.',
+			'errPopup'             : 'Navigateur empeche les pop-up de s’ouvrir. Pour ouvrir le fichier, changer l’optoipn des pop-up du navigateur.',
+			'errMkdir'             : 'Incapable de créer un dossier "$1".',
+			'errMkfile'            : 'Incapable de créer un fichier "$1".',
+			'errRename'            : 'Incapable de renommer "$1".',
+			'errCopyFrom'          : 'Copier les dossiers du volume "$1" n’est pas permis.',
+			'errCopyTo'            : 'Copying les fichiers du volume "$1" n’est pas permis.',
+			'errMkOutLink'         : 'Incapable de créer un lien vers l’exterieur de Root.',
+ // from v2.1 added 03.10.2015
+			'errUpload'            : 'Upload erreur.',
+ // old name - errUploadCommon
+			'errUploadFile'        : 'Incapable de uploader "$1".',
+ // old name - errUpload
+			'errUploadNoFiles'     : 'Pas de fichier trouvé pour uploader.',
+			'errUploadTotalSize'   : 'Les données excedent la taille permise.',
+ // old name - errMaxSize
+			'errUploadFileSize'    : 'Le fichier excede la taille permise.',
+ //  old name - errFileMaxSize
+			'errUploadMime'        : 'Type de fichier non permis.',
+			'errUploadTransfer'    : 'Erreur de transfer de "$1".',
+			'errUploadTemp'        : 'Incapable de créer un fichier temporaire pour upload.',
+ // from v2.1 added 26.09.2015
+			'errNotReplace'        : 'Objet "$1" existe déjà à cet endroit et ne peut pas être remplacé par un autre objet d’un autre type.', // new
+			'errReplace'           : 'Incapable de remplacer "$1".',
+			'errSave'              : 'Incapable de sauvegarder "$1".',
+			'errCopy'              : 'Incapable de copier "$1".',
+			'errMove'              : 'Incapable de déplacer "$1".',
+			'errCopyInItself'      : 'Incapable de copier "$1" dans lui-même.',
+			'errRm'                : 'Incapable de retirer "$1".',
+			'errTrash'             : 'Incapable dans la poubelle.',
+ // from v2.1.24 added 30.4.2017
+			'errRmSrc'             : 'Incapable de retirer les fichiers source.',
+			'errExtract'           : 'Incapable d’extraire les fichiers de "$1".',
+			'errArchive'           : 'Incapable de créer une archive.',
+			'errArcType'           : 'Type d’archive non supporté.',
 			'errNoArchive'         : 'File is not archive or has unsupported archive type.',
 			'errCmdNoSupport'      : 'Backend does not support this command.',
 			'errReplByChild'       : 'The folder "$1" can\'t be replaced by an item it contains.',
 			'errArcSymlinks'       : 'For security reason denied to unpack archives contains symlinks or files with not allowed names.', // edited 24.06.2012
 			'errArcMaxSize'        : 'Archive files exceeds maximum allowed size.',
-			'errResize'            : 'Unable to resize "$1".',
+			'errResize'            : 'Incapable to resize "$1".',
 			'errResizeDegree'      : 'Invalid rotate degree.',  // added 7.3.2013
-			'errResizeRotate'      : 'Unable to rotate image.',  // added 7.3.2013
+			'errResizeRotate'      : 'Incapable to rotate image.',  // added 7.3.2013
 			'errResizeSize'        : 'Invalid image size.',  // added 7.3.2013
 			'errResizeNoChange'    : 'Image size not changed.',  // added 7.3.2013
 			'errUsupportType'      : 'Unsupported file type.',
 			'errNotUTF8Content'    : 'File "$1" is not in UTF-8 and cannot be edited.',  // added 9.11.2011
-			'errNetMount'          : 'Unable to mount "$1".', // added 17.04.2012
+			'errNetMount'          : 'Incapable to mount "$1".', // added 17.04.2012
 			'errNetMountNoDriver'  : 'Unsupported protocol.',     // added 17.04.2012
 			'errNetMountFailed'    : 'Mount failed.',         // added 17.04.2012
 			'errNetMountHostReq'   : 'Host required.', // added 18.04.2012
 			'errSessionExpires'    : 'Your session has expired due to inactivity.',
-			'errCreatingTempDir'   : 'Unable to create temporary directory: "$1"',
-			'errFtpDownloadFile'   : 'Unable to download file from FTP: "$1"',
-			'errFtpUploadFile'     : 'Unable to upload file to FTP: "$1"',
-			'errFtpMkdir'          : 'Unable to create remote directory on FTP: "$1"',
-			'errArchiveExec'       : 'Error while archiving files: "$1"',
-			'errExtractExec'       : 'Error while extracting files: "$1"',
-			'errNetUnMount'        : 'Unable to unmount.', // from v2.1 added 30.04.2012
+			'errCreatingTempDir'   : 'Incapable to create temporary directory: "$1"',
+			'errFtpDownloadFile'   : 'Incapable to download file from FTP: "$1"',
+			'errFtpUploadFile'     : 'Incapable to upload file to FTP: "$1"',
+			'errFtpMkdir'          : 'Incapable to create remote directory on FTP: "$1"',
+			'errArchiveExec'       : 'erreur while archiving files: "$1"',
+			'errExtractExec'       : 'erreur while extracting files: "$1"',
+			'errNetUnMount'        : 'Incapable to unmount.', // from v2.1 added 30.04.2012
 			'errConvUTF8'          : 'Not convertible to UTF-8', // from v2.1 added 08.04.2014
 			'errFolderUpload'      : 'Try the modern browser, If you\'d like to upload the folder.', // from v2.1 added 26.6.2015
 			'errSearchTimeout'     : 'Timed out while searching "$1". Search result is partial.', // from v2.1 added 12.1.2016
 			'errReauthRequire'     : 'Re-authorization is required.', // from v2.1.10 added 24.3.2016
 			'errMaxTargets'        : 'Max number of selectable items is $1.', // from v2.1.17 added 17.10.2016
-			'errRestore'           : 'Unable to restore from the trash. Can\'t identify the restore destination.', // from v2.1.24 added 3.5.2017
+			'errRestore'           : 'Incapable to restore from the trash. Can\'t identify the restore destination.', // from v2.1.24 added 3.5.2017
 			'errEditorNotFound'    : 'Editor not found to this file type.', // from v2.1.25 added 23.5.2017
-			'errServerError'       : 'Error occurred on the server side.', // from v2.1.25 added 16.6.2017
-			'errEmpty'             : 'Unable to empty folder "$1".', // from v2.1.25 added 22.6.2017
+			'errServererreur'       : 'erreur occurred on the server side.', // from v2.1.25 added 16.6.2017
+			'errEmpty'             : 'Incapable to empty folder "$1".', // from v2.1.25 added 22.6.2017
 
 			/******************************* commands names ********************************/
 			'cmdarchive'   : 'Create archive',
@@ -522,5 +530,4 @@ if (typeof elFinder === 'function' && elFinder.prototype.i18) {
 			'kindVideoOGG'    : 'Ogg movie'
 		}
 	};
-}
-
+}));
